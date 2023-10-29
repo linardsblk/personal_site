@@ -9,9 +9,9 @@
   <div class="text-lg text-slate-200">Hi all. I am</div>
   <h1 class="text-6xl text-slate-200">Linards Bulks</h1>
   <h1 class="text-3xl text-secondary-blue">&gt Full-stack developer</h1>
-  <div class="absolute h-full w-full">
-    <!-- Blue gradient -->
-    <!-- <svg
+  <!-- <div class="absolute h-full w-full"> -->
+  <!-- Blue gradient -->
+  <!-- <svg
       width="868"
       height="831"
       fill="none"
@@ -48,8 +48,8 @@
       </defs>
     </svg> -->
 
-    <!-- Green gradient -->
-    <!-- <svg
+  <!-- Green gradient -->
+  <!-- <svg
       width="864"
       height="784"
       fill="none"
@@ -86,5 +86,5 @@
         </filter>
       </defs>
     </svg> -->
-  </div>
+  <!-- </div> -->
 </section>

@@ -7,21 +7,8 @@
 <div class="app flex min-h-screen flex-col bg-background text-slate-500">
   <Header />
 
-  <main>
+  <main class="mx-auto my-0 box-border flex w-full max-w-5xl flex-1 p-4">
     <slot />
   </main>
   <Footer />
 </div>
-
-<style>
-  main {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-    width: 100%;
-    max-width: 64rem;
-    margin: 0 auto;
-    box-sizing: border-box;
-  }
-</style>
