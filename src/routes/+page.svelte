@@ -9,9 +9,10 @@
   <div class="text-lg text-slate-200">Hi all. I am</div>
   <h1 class="text-6xl text-slate-200">Linards Bulks</h1>
   <h1 class="text-3xl text-secondary-blue">&gt Full-stack developer</h1>
-  <!-- <div class="absolute h-full w-full"> -->
   <!-- Blue gradient -->
-  <!-- <svg
+  <div class="absolute right-0 top-0">
+    <svg
+      class="w-full min-w-0"
       width="868"
       height="831"
       fill="none"
@@ -46,15 +47,17 @@
           />
         </filter>
       </defs>
-    </svg> -->
+    </svg>
+  </div>
 
   <!-- Green gradient -->
-  <!-- <svg
+  <div class="absolute bottom-0 right-0">
+    <svg
       width="864"
       height="784"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      class="absolute"
+      class="w-full min-w-0"
     >
       <g opacity="0.4" filter="url(#filter0_f_64_1236)">
         <path
@@ -85,6 +88,6 @@
           />
         </filter>
       </defs>
-    </svg> -->
-  <!-- </div> -->
+    </svg>
+  </div>
 </section>
