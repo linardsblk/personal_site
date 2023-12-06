@@ -1,15 +1,80 @@
-<svelte:head>
-  <title>Home</title>
-  <meta name="description" content="Svelte demo app" />
-</svelte:head>
+<script lang="ts">
+  import { onMount } from 'svelte';
+  import { homePageAnimated } from './store';
 
+  const minTypeSpeed = 30;
+  const maxTypeSpeed = 100;
+  const randomTypeSpeed = () =>
+    Math.floor(Math.random() * (maxTypeSpeed - minTypeSpeed + 1)) +
+    minTypeSpeed;
+
+  let text = '';
+
+  const typewriter = (index: number, typewritterText: string) => {
+    return new Promise<void>((resolve) => {
+      const speed = randomTypeSpeed();
+
+      setTimeout(async () => {
+        if (index < typewritterText.length) {
+          text += typewritterText.charAt(index);
+          await typewriter(index + 1, typewritterText).then(resolve);
+        } else {
+          resolve();
+        }
+      }, speed);
+    });
+  };
+
+  const typewritterDelete = (deleteChars: number) => {
+    return new Promise<void>((resolve) => {
+      setTimeout(() => {
+        if (deleteChars > 0) {
+          text = text.slice(0, -1);
+          typewritterDelete(deleteChars - 1).then(resolve);
+        } else {
+          resolve();
+        }
+      }, 120);
+    });
+  };
+
+  let homePageAnimatedValue = false;
+
+  const unsubscribe = homePageAnimated.subscribe((value) => {
+    homePageAnimatedValue = value;
+    console.log(value);
+  });
+
+  onMount(async () => {
+    if (homePageAnimatedValue) {
+      text = '> Full-stack developer';
+      return;
+    }
+
+    await typewriter(0, '> Fullst');
+    await typewritterDelete(2);
+    await typewriter(0, '-stack developer');
+
+    homePageAnimated.update(() => true);
+  });
+</script>
+
+<svelte:head>
+  <title>Hello!</title>
+  <meta name="description" content="Linards personal site" />
+</svelte:head>
 <section
   class="relative flex flex-[0.8] flex-col justify-center text-center md:ml-20 md:items-start"
 >
   <div class="w-screen" />
   <div class="text-lg text-slate-200">Hi all. I am</div>
   <h1 class="text-6xl text-slate-200">Linards Bulks</h1>
-  <h1 class="text-3xl text-secondary-blue">&gt Full-stack developer</h1>
+  <div class="flex">
+    <h1 class="text-3xl text-secondary-blue">{text}</h1>
+    <div
+      class="animate-duration-500 animate-blink ml-2 h-10 w-1 bg-secondary-blue"
+    />
+  </div>
 
   <!-- Blue gradient -->
   <div class="absolute right-0 top-0">
