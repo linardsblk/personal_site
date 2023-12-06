@@ -7,7 +7,7 @@
 <div class="app flex min-h-screen flex-col bg-background text-slate-500">
   <Header />
 
-  <main class="mx-auto my-0 box-border flex w-full max-w-5xl flex-1 p-4">
+  <main class="my-0 box-border flex w-screen flex-1">
     <slot />
   </main>
   <Footer />

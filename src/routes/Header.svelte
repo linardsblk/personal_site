@@ -19,13 +19,13 @@
 </script>
 
 <header>
-  <nav class="w-full h-10 border-b-2 border-lines">
-    <ul class="flex flex-row h-full">
+  <nav class="h-10 w-full border-b-2 border-lines">
+    <ul class="flex h-full flex-row">
       {#each navItems as nav}
         <li
           aria-current={$page.url.pathname === nav.url ? 'page' : undefined}
           class={clsx('border-r-2 border-lines px-2 ', {
-            'border-b-accent-orange border-b-4 border-separate':
+            'border-separate border-b-4 border-b-accent-orange':
               $page.url.pathname === nav.url,
           })}
         >

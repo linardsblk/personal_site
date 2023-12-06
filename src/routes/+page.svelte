@@ -4,11 +4,13 @@
 </svelte:head>
 
 <section
-  class="flex flex-[0.8] flex-col justify-center text-center md:ml-20 md:items-start"
+  class="relative flex flex-[0.8] flex-col justify-center text-center md:ml-20 md:items-start"
 >
+  <div class="w-screen" />
   <div class="text-lg text-slate-200">Hi all. I am</div>
   <h1 class="text-6xl text-slate-200">Linards Bulks</h1>
   <h1 class="text-3xl text-secondary-blue">&gt Full-stack developer</h1>
+
   <!-- Blue gradient -->
   <div class="absolute right-0 top-0">
     <svg
