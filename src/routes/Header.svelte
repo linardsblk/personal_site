@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import { page } from '$app/stores';
   import clsx from 'clsx';
 
@@ -15,23 +15,66 @@
       name: 'projects.tsx',
       url: '/projects',
     },
-  ];
+  ] as const;
+
+  let navOpen = false;
+
+  function toggleNavOpen() {
+    navOpen = !navOpen;
+  }
+
+  $: isCurrentPage = (url: string) => $page.url.pathname === url;
 </script>
 
 <header>
-  <nav class="h-10 w-full border-b-2 border-lines">
-    <ul class="flex h-full flex-row">
+  <nav class="min-h-10 w-full border-b-2 border-lines">
+    <ul class="hidden h-full flex-row sm:flex">
       {#each navItems as nav}
         <li
-          aria-current={$page.url.pathname === nav.url ? 'page' : undefined}
+          aria-current={isCurrentPage(nav.url) ? 'page' : undefined}
           class={clsx('border-r-2 border-lines px-2 ', {
-            'border-separate border-b-4 border-b-accent-orange':
-              $page.url.pathname === nav.url,
+            'border-separate border-b-4 border-b-accent-orange': isCurrentPage(
+              nav.url,
+            ),
           })}
         >
           <a href={nav.url}>{nav.name}</a>
         </li>
       {/each}
     </ul>
+    <div class="flex items-center">
+      <button class="m-0.5 mr-1 h-8 w-8" on:click={toggleNavOpen}>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="h-8 w-8"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+          />
+        </svg>
+      </button>
+      <ul class={clsx('flex h-full flex-1 flex-col')}>
+        {#each navItems as nav}
+          <li
+            aria-current={isCurrentPage(nav.url) ? 'page' : undefined}
+            class={clsx({
+              'border-b-2 border-lines px-2 ': navOpen,
+              'border-separate border-b-4 border-b-accent-orange':
+                isCurrentPage(nav.url) && navOpen,
+              hidden: !isCurrentPage(nav.url) && !navOpen,
+              'last:border-0': !isCurrentPage(nav.url),
+            })}
+          >
+            <a on:click={toggleNavOpen} href={nav.url}>{nav.name}</a>
+          </li>
+        {/each}
+      </ul>
+    </div>
   </nav>
 </header>

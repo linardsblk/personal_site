@@ -70,7 +70,7 @@
   </div>
 
   <!-- Blue gradient -->
-  <div class="absolute right-0 top-0">
+  <div class="absolute bottom-0 right-0 top-0">
     <svg
       class="w-full min-w-0"
       width="868"
@@ -111,7 +111,7 @@
   </div>
 
   <!-- Green gradient -->
-  <div class="absolute bottom-0 right-0">
+  <div class="absolute bottom-0 right-0 top-0">
     <svg
       width="864"
       height="784"
