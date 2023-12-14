@@ -64,7 +64,7 @@
   <h1 class="text-6xl text-slate-200">Linards Bulks</h1>
   <div class="flex">
     <h1 class="text-3xl text-secondary-blue">{text}</h1>
-    <div
+    <span
       class="animate-duration-500 ml-2 h-10 w-1 animate-blink bg-secondary-blue"
     />
   </div>

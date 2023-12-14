@@ -42,7 +42,7 @@
         </li>
       {/each}
     </ul>
-    <div class="flex items-center">
+    <div class="flex items-center sm:hidden">
       <button class="m-0.5 mr-1 h-8 w-8" on:click={toggleNavOpen}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
