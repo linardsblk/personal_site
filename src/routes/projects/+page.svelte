@@ -12,11 +12,14 @@
   ];
 </script>
 
-<div
-  style="grid-template-columns: repeat(auto-fill, minmax(350px, 1fr))"
-  class="grid w-full gap-4 p-4"
->
+<div class="projects-grid grid h-max w-full items-stretch gap-4 p-4">
   {#each projects as project}
     <ProjectCard {...project} />
   {/each}
 </div>
+
+<style>
+  .projects-grid {
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  }
+</style>
