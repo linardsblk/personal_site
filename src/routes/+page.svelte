@@ -38,15 +38,8 @@
     });
   };
 
-  let homePageAnimatedValue = false;
-
-  const unsubscribe = homePageAnimated.subscribe((value) => {
-    homePageAnimatedValue = value;
-    console.log(value);
-  });
-
   onMount(async () => {
-    if (homePageAnimatedValue) {
+    if ($homePageAnimated) {
       text = '> Full-stack developer';
       return;
     }
@@ -72,7 +65,7 @@
   <div class="flex">
     <h1 class="text-3xl text-secondary-blue">{text}</h1>
     <div
-      class="animate-duration-500 animate-blink ml-2 h-10 w-1 bg-secondary-blue"
+      class="animate-duration-500 ml-2 h-10 w-1 animate-blink bg-secondary-blue"
     />
   </div>
 
