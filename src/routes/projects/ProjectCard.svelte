@@ -3,6 +3,8 @@
   export let description: string;
   export let url: string;
   export let tags: string[] = [];
+
+  const tagsString = `[${tags.join(', ')}]`;
 </script>
 
 <a href={url} class="group flex flex-col rounded border-2 border-lines p-2">
@@ -14,10 +16,8 @@
   </div>
   <div class="mt-auto flex justify-between">
     <div></div>
-    <div class="flex justify-end gap-4 text-accent-orange">
-      {#each tags as tag}
-        <div>{tag}</div>
-      {/each}
+    <div class="text-accent-orange">
+      {tagsString}
     </div>
   </div>
 </a>
