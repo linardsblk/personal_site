@@ -59,7 +59,7 @@
           />
         </svg>
       </button>
-      <ul class={clsx('flex h-full flex-1 flex-col')}>
+      <ul class="flex h-full flex-1 flex-col">
         {#each navItems as nav}
           <li
             aria-current={isCurrentPage(nav.url) ? 'page' : undefined}
