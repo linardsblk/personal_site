@@ -30,9 +30,6 @@
 
     return url === pathname;
   };
-
-
-
 </script>
 
 <header>

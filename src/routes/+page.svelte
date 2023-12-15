@@ -56,17 +56,16 @@
   <title>Hello!</title>
   <meta name="description" content="Linards personal site" />
 </svelte:head>
-<section
-  class="relative flex flex-[0.8] flex-col justify-center text-center md:ml-20 md:items-start"
->
-  <div class="w-screen" />
-  <div class="text-lg text-slate-200">Hi all. I am</div>
-  <h1 class="text-6xl text-slate-200">Linards Bulks</h1>
-  <div class="flex">
-    <h1 class="text-3xl text-secondary-blue">{text}</h1>
-    <span
-      class="animate-duration-500 ml-2 h-10 w-1 animate-blink bg-secondary-blue"
-    />
+<section class="relative flex w-full flex-col justify-center overflow-hidden">
+  <div class="my-auto flex flex-col items-center sm:items-start justify-center text-center sm:pl-16 md:pl-20">
+    <div class="text-lg text-slate-200">Hi all. I am</div>
+    <h1 class="text-6xl text-slate-200">Linards Bulks</h1>
+    <div class="flex">
+      <h2 class="text-3xl text-secondary-blue">{text}</h2>
+      <span
+        class="animate-duration-500 ml-2 h-10 w-1 animate-blink bg-secondary-blue"
+      />
+    </div>
   </div>
 
   <!-- Blue gradient -->
