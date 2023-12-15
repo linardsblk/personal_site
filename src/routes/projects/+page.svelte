@@ -12,6 +12,10 @@
   ];
 </script>
 
+<svelte:head>
+  <title>Projects - linards.dev</title>
+  <meta name="description" content="Projects" />
+</svelte:head>
 <div class="projects-grid grid h-max w-full items-stretch gap-4 p-4">
   {#each projects as project}
     <ProjectCard {...project} />

@@ -22,7 +22,7 @@
 </script>
 
 <svelte:head>
-  <title>About</title>
+  <title>About - linards.dev</title>
   <meta name="description" content="About me" />
 </svelte:head>
 
@@ -43,7 +43,7 @@
       */<br />
     </p>
   </div>
-  <div>
+  <div class="max-w-screen-md">
     <div bind:this={commentedCodeElement}>
       <p class="text-lg">
         <br />

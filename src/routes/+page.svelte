@@ -53,8 +53,8 @@
 </script>
 
 <svelte:head>
-  <title>Hello!</title>
-  <meta name="description" content="Linards personal site" />
+  <title>Hello! - linards.dev</title>
+  <meta name="description" content="Landing page" />
 </svelte:head>
 <section class="relative flex w-full flex-col justify-center overflow-hidden">
   <div class="my-auto flex flex-col items-center sm:items-start justify-center text-center sm:pl-16 md:pl-20">
