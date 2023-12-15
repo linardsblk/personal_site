@@ -23,11 +23,21 @@
     navOpen = !navOpen;
   }
 
-  $: isCurrentPage = (url: string) => $page.url.pathname === url;
+  $: isCurrentPage = (url: string) => {
+    // normalize by removing trailing shash
+    url = url.replace(/\/$/, '');
+    const pathname = $page.url.pathname.replace(/\/$/, '');
+
+    return url === pathname;
+  };
+
+
+
 </script>
 
 <header>
   <nav class="min-h-10 w-full border-b-2 border-lines">
+    <!-- Desktop layout navigation -->
     <ul class="hidden h-full flex-row sm:flex">
       {#each navItems as nav}
         <li
@@ -42,6 +52,7 @@
         </li>
       {/each}
     </ul>
+    <!-- Mobile layout navigation -->
     <div class="flex items-center sm:hidden">
       <button class="m-0.5 mr-1 h-8 w-8" on:click={toggleNavOpen}>
         <svg

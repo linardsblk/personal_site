@@ -1,9 +1,10 @@
 <footer class="flex place-items-center items-stretch border-t-2 border-lines">
-  <div class="flex items-center border-r-2 border-lines p-2">find me in:</div>
+  <div class="flex items-center border-r-2 border-lines p-2">find me on:</div>
   <a
-    class="flex items-center border-r-2 border-lines p-2"
+    class="item-center flex items-center gap-2 border-r-2 border-lines p-2 hover:underline"
     href="https://www.linkedin.com/in/linards-bulks/"
   >
+    <div class="hidden sm:block">LinkedIn</div>
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="24"
@@ -18,10 +19,10 @@
     </svg>
   </a>
   <a
-    class="item-center ml-auto flex items-center gap-2 border-l-2 border-lines p-2"
+    class="item-center flex items-center gap-2 border-r-2 border-lines p-2 hover:underline"
     href="https://github.com/linardsblk"
   >
-    <div>@linardsblk</div>
+    <div class="hidden sm:block">GitHub</div>
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="24"
