@@ -24,7 +24,7 @@ export default {
         background: '#011627',
 
         // secondary
-        'secondary-blue': '#4D5BCE',
+        'secondary-blue': '#6B77D6',
 
         // accent
         'accent-orange': '#FEA55F',
