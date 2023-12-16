@@ -6,7 +6,7 @@
     {
       title: 'linards.dev',
       description:
-        'My personal website I use to showcase my projects and provide a space to experiment with new technologies.',
+        'This is my personal website, which I use to showcase my projects and provide a space for experimenting with new technologies.',
       url: 'https://linards.dev',
       tags: ['SvelteKit', 'Tailwind', 'TypeScript'],
       sourceCodeUrl: 'https://github.com/linardsblk/personal_website',
@@ -14,14 +14,14 @@
     {
       title: 'CSDD Helper',
       description:
-        'Chrome extension for CSDD (Latvian Road Traffic Safety Directorate) theory exam practice. It adds functionality to answer questions with keyboard, auto-play videos, skip intro and more. Allows to practice theory exam without mouse and in less time.',
+        'A Chrome extension designed for CSDD (Latvian Road Traffic Safety Directorate) theory exam practice. It enhances functionality by allowing users to answer questions using a keyboard, auto-play videos, skip introductions, and more. This allows for a much faster and efficient theory exam practice without the need for a mouse',
       url: 'https://github.com/linardsblk/csdd_helper',
       tags: ['JavaSript'],
     },
     {
       title: 'QR Wallpaper',
       description:
-        'Generate QR image for your wallpaper or screensaver. I was tired of Face ID not working with masks during COVID and unlocking my phone every time I was required to show ceritificate. So I made this app to generate scannable QR code while keeping original wallpaper.',
+        'An application to generate a QR image for your wallpaper or screensaver. I developed this solution in response to the inconvenience of Face ID not working with masks during the COVID-19 pandemic, which necessitated frequent phone unlocking to show certificates. This app generates a scannable QR code while preserving the original wallpaper.',
       url: 'https://qrwallpaper.linards.id.lv/',
       tags: ['React', 'Material UI'],
       sourceCodeUrl: 'https://github.com/linardsblk/qr-wallpaper',
