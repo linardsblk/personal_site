@@ -6,7 +6,7 @@
     {
       title: 'linards.dev',
       description:
-        'The website you are currently using, which I use to showcase my projects and provide a space for experimenting with new technologies.',
+        'The website you are currently using. Which I use to showcase my projects and provides me a space for experiment with new technologies.',
       url: 'https://linards.dev',
       tags: ['SvelteKit', 'Tailwind', 'TypeScript'],
       sourceCodeUrl: 'https://github.com/linardsblk/personal_site',
@@ -31,9 +31,14 @@
 
 <svelte:head>
   <title>Projects - linards.dev</title>
-  <meta name="description" content="Linards Bulks - Full-stack developer. Projects." />
+  <meta
+    name="description"
+    content="Linards Bulks - Full-stack developer. Projects."
+  />
 </svelte:head>
-<div class="projects-grid grid h-max w-full items-stretch gap-4 p-4">
+<div
+  class="projects-grid grid h-max w-full items-stretch gap-4 p-4 px-1 sm:px-4"
+>
   {#each projects as project}
     <ProjectCard {...project} />
   {/each}

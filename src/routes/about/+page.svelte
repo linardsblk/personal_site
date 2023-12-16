@@ -23,7 +23,10 @@
 
 <svelte:head>
   <title>About - linards.dev</title>
-  <meta name="description" content="Linards Bulks - Full-stack developer. About me." />
+  <meta
+    name="description"
+    content="Linards Bulks - Full-stack developer. About me."
+  />
 </svelte:head>
 
 <div class="flex">
@@ -47,11 +50,20 @@
     <div bind:this={commentedCodeElement}>
       <p class="text-lg">
         <br />
-        Hi, I'm Linards Bulks, a Full-stack developer located in Riga. I specialize in building web applications of varying scales and complexities. My toolkit includes React and its ecosystem, Node.js, TypeScript, MongoDB, PostgreSQL, Docker, and more. I use this website to showcase my projects and experiment with new technologies.
+        Hi, I'm Linards Bulks, a Full-stack developer located in Riga. I specialize
+        in building web applications of varying scales and complexities. My toolkit
+        includes React and its ecosystem, Node.js, TypeScript, MongoDB, PostgreSQL,
+        Docker, and more. I use this website to showcase my projects and experiment
+        with new technologies.
       </p>
       <p class="text-lg">
         <br />
-        Interested in connecting? Feel free to check out my socials below or send me an <a class="underline text-accent-orange"  href="mailto:linards.bulks@gmail.com">email</a>. :)
+        Interested in connecting? Feel free to check out my socials below or send
+        me an
+        <a
+          class="text-accent-orange underline"
+          href="mailto:linards.bulks@gmail.com">email</a
+        >. :)
         <br />
       </p>
     </div>

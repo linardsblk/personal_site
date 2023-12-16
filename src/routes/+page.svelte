@@ -54,7 +54,10 @@
 
 <svelte:head>
   <title>Hello! - linards.dev</title>
-  <meta name="description" content="Linards Bulks - Full-stack developer. Personal website." />
+  <meta
+    name="description"
+    content="Linards Bulks - Full-stack developer. Personal website."
+  />
 </svelte:head>
 <section class="relative flex w-full flex-col justify-center overflow-hidden">
   <div
