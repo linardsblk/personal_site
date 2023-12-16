@@ -61,10 +61,7 @@
     <div class="text-lg text-slate-200">Hi all. I am</div>
     <h1 class="text-6xl text-slate-200">Linards Bulks</h1>
     <div class="flex">
-      <h2 class="text-3xl text-secondary-blue">{text}</h2>
-      <span
-        class="animate-duration-500 ml-2 h-10 w-1 animate-blink bg-secondary-blue"
-      />
+      <h2 class="text-3xl text-secondary-blue">{text}<span class=" ml-2 animate-duration-500 animate-blink border-l-4 border-secondary-blue">&nbsp;</span></h2>
     </div>
   </div>
 
