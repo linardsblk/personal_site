@@ -9,7 +9,7 @@
         'This is my personal website, which I use to showcase my projects and provide a space for experimenting with new technologies.',
       url: 'https://linards.dev',
       tags: ['SvelteKit', 'Tailwind', 'TypeScript'],
-      sourceCodeUrl: 'https://github.com/linardsblk/personal_website',
+      sourceCodeUrl: 'https://github.com/linardsblk/personal_site',
     },
     {
       title: 'CSDD Helper',
