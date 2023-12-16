@@ -32,7 +32,7 @@
   };
 </script>
 
-<header>
+<header class="sticky top-0 bg-background">
   <nav class="min-h-10 w-full border-b-2 border-lines">
     <!-- Desktop layout navigation -->
     <ul class="hidden h-full flex-row sm:flex">
@@ -50,15 +50,15 @@
       {/each}
     </ul>
     <!-- Mobile layout navigation -->
-    <div class="flex items-center sm:hidden">
-      <button class="m-0.5 mr-1 h-8 w-8" on:click={toggleNavOpen}>
+    <div class="flex sm:hidden">
+      <button class="m-0.5 mr-3 h-10 w-10 self-start"  on:click={toggleNavOpen}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
           stroke-width="1.5"
           stroke="currentColor"
-          class="h-8 w-8"
+          class="h-10 w-10"
         >
           <path
             stroke-linecap="round"
@@ -67,11 +67,11 @@
           />
         </svg>
       </button>
-      <ul class="flex h-full flex-1 flex-col">
+      <ul class="flex h-full flex-1 flex-col self-center">
         {#each navItems as nav}
           <li
             aria-current={isCurrentPage(nav.url) ? 'page' : undefined}
-            class={clsx({
+            class={clsx('text-lg', {
               'border-b-2 border-lines px-2 ': navOpen,
               'border-separate border-b-4 border-b-accent-orange':
                 isCurrentPage(nav.url) && navOpen,

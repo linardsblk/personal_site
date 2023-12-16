@@ -4,7 +4,7 @@
   import './styles.css';
 </script>
 
-<div class="app flex min-h-screen flex-col bg-background text-slate-500">
+<div class="app flex min-h-[100dvh] flex-col bg-background text-slate-500">
   <Header />
 
   <main class="my-0 box-border flex w-screen flex-1">
