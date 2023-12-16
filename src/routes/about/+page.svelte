@@ -23,7 +23,7 @@
 
 <svelte:head>
   <title>About - linards.dev</title>
-  <meta name="description" content="About me" />
+  <meta name="description" content="Linards Bulks - Full-stack developer. About me." />
 </svelte:head>
 
 <div class="flex">

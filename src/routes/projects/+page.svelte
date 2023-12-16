@@ -31,7 +31,7 @@
 
 <svelte:head>
   <title>Projects - linards.dev</title>
-  <meta name="description" content="Projects" />
+  <meta name="description" content="Linards Bulks - Full-stack developer. Projects." />
 </svelte:head>
 <div class="projects-grid grid h-max w-full items-stretch gap-4 p-4">
   {#each projects as project}
