@@ -57,11 +57,18 @@
   <meta name="description" content="Landing page" />
 </svelte:head>
 <section class="relative flex w-full flex-col justify-center overflow-hidden">
-  <div class="my-auto flex flex-col items-center sm:items-start justify-center text-center sm:pl-16 md:pl-20">
+  <div
+    class="my-auto flex flex-col items-center justify-center text-center sm:items-start sm:pl-16 md:pl-20"
+  >
     <div class="text-lg text-slate-200">Hi all. I am</div>
     <h1 class="text-6xl text-slate-200">Linards Bulks</h1>
     <div class="flex">
-      <h2 class="text-3xl text-secondary-blue">{text}<span class=" ml-2 animate-duration-500 animate-blink border-l-4 border-secondary-blue">&nbsp;</span></h2>
+      <h2 class="text-3xl text-secondary-blue">
+        {text}<span
+          class=" animate-duration-500 ml-2 animate-blink border-l-4 border-secondary-blue"
+          >&nbsp;</span
+        >
+      </h2>
     </div>
   </div>
 
