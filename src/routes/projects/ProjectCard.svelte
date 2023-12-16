@@ -18,7 +18,7 @@
   <div class="mt-auto">
     <div class="mt-2 flex">
       {#if sourceCodeUrl}
-        <div class="h-8 w-8 hover:text-accent-orange">
+        <div class="h-8 w-8 hover:text-accent-orange mt-auto">
           <a href={sourceCodeUrl} aria-label="Source code on GitHub"
             ><svg
               class="h-6 w-6"
@@ -38,7 +38,7 @@
           </a>
         </div>
       {/if}
-      <div class="ml-auto text-accent-orange">
+      <div class="ml-auto text-accent-orange text-end">
         {tagsString}
       </div>
     </div>
