@@ -47,7 +47,7 @@
     <div bind:this={commentedCodeElement}>
       <p class="text-lg">
         <br />
-        Hi, I'm Linards Bulks, a Full-stack developer based in Riga. I specialize in building web applications of varying scales and complexities. My toolkit includes React and its ecosystem, Node.js, TypeScript, MongoDB, PostgreSQL, Docker, and more. I use this website to showcase my projects and experiment with new technologies.
+        Hi, I'm Linards Bulks, a Full-stack developer located in Riga. I specialize in building web applications of varying scales and complexities. My toolkit includes React and its ecosystem, Node.js, TypeScript, MongoDB, PostgreSQL, Docker, and more. I use this website to showcase my projects and experiment with new technologies.
       </p>
       <p class="text-lg">
         <br />

@@ -51,7 +51,7 @@
     </ul>
     <!-- Mobile layout navigation -->
     <div class="flex sm:hidden">
-      <button class="m-0.5 mr-3 h-10 w-10 self-start" on:click={toggleNavOpen}>
+      <button class="m-0.5 mr-3 h-10 w-10 self-start" aria-label="Toggle Navigation" on:click={toggleNavOpen}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"

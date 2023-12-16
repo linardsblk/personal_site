@@ -3,6 +3,7 @@
   <a
     class="item-center flex items-center gap-2 border-r-2 border-lines p-2 hover:underline"
     href="https://www.linkedin.com/in/linards-bulks/"
+    aria-label="LinkedIn profile"
   >
     <div class="hidden sm:block">LinkedIn</div>
     <svg
@@ -21,6 +22,7 @@
   <a
     class="item-center flex items-center gap-2 border-r-2 border-lines p-2 hover:underline"
     href="https://github.com/linardsblk"
+    aria-label="GitHub profile"
   >
     <div class="hidden sm:block">GitHub</div>
     <svg
