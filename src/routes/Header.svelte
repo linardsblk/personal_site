@@ -33,7 +33,7 @@
 </script>
 
 <header class="sticky top-0 bg-background">
-  <nav class="min-h-10 w-full border-b-2 border-lines">
+  <nav class="w-full border-b-2 border-lines">
     <!-- Desktop layout navigation -->
     <ul class="hidden h-full flex-row sm:flex">
       {#each navItems as nav}
